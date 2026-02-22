@@ -363,7 +363,7 @@ class OciOccFix:
 
         ads = json.loads(self.config.get('OCI', 'availability_domains'))
         
-        while True:
+        for _pass in range(1):  # single pass per GitHub Actions run
             try:
                 for ad in ads:
                     self.total_retries += 1
