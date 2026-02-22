@@ -75,4 +75,3 @@ jobs:
 
       - name: Run bot (single attempt)
         run: python3 bot.py
-        timeout-minutes: 4
